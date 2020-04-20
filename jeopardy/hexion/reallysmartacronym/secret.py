@@ -1,0 +1,1 @@
+flag = "hexCTF{helloiamflag}"

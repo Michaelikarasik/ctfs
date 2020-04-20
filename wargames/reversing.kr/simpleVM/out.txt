@@ -1,0 +1,47 @@
+execve("./SimpleVM", ["./SimpleVM"], 0x7fff3182d520 /* 16 vars */) = 0
+mmap(0xc03000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0xc03000) = 0xc03000
+readlink("/proc/self/exe", "/mnt/c/Users/Alma Karasik/Downloads/ctfs/wargames/reversing.kr/simpleVM/SimpleVM", 4096) = 80
+mmap(0x8048000, 4415, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x8048000
+mprotect(0x8048000, 4412, PROT_READ|PROT_EXEC) = 0
+mmap(0x804a000, 4459, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0x1000) = 0x804a000
+mprotect(0x804a000, 4456, PROT_READ|PROT_WRITE) = 0
+brk(0x804c000)                          = 0x816d000
+open("/lib/ld-linux.so.2", O_RDONLY)    = 3
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0p\f\0\0004\0\0\0\304l\2\0\0\0\0\0004\0 \0\7\0(\0\32\0\31\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0|S\2\0|S\2\0\5\0\0\0\0\20\0\0\1\0\0\0\200X\2\0\200h\2\0\200h\2\0\364\17\0\0\270\20\0\0\6\0\0\0\0\20\0\0\2\0\0\0004_\2\0004o\2\0004o\2\0\270\0\0\0\270\0\0\0\6\0\0\0\4\0\0\0\4\0\0\0\24\1\0\0\24\1\0\0\24\1\0\0$\0\0\0$\0\0\0\4\0\0\0\4\0\0\0P\345td\244\0\2\0\244\0\2\0\244\0\2\0004\7\0\0004\7\0\0\4\0\0\0\4\0\0\0Q\345td\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\20\0\0\0R\345td\200X\2\0\200h\2\0\200h\2\0\200\7\0\0\200\7\0\0\4\0\0\0\1\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0zY\355\0306\362{f\377\323\221\326V\332d5\5_\2\370\21\0\0\0$\0\0\0\4\0\0\0\"\0\0\0 \0\0\0\t\0\0\0\6\0\0\0\10\0\0\0\v\0\0\0\34\0\0\0\7\0\0\0\0\0\0\0\36\0\0\0\r\0\0\0\n\0\0\0\f\0\0\0\32\0\0\0\23\0\0\0\16\0\0\0\0\0\0\0\0\0\0\0\35\0\0\0\0\0\0\0\1\0\0\0\27\0\0\0\31\0\0\0\0\0\0\0!\0\0\0\25\0\0\0\0\0\0\0\5\0\0\0#\0\0\0\30\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\33\0\0\0\0\0\0\0\21\0\0\0\26\0\0\0\22\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0\17\0\0\0\24\0\0\0\0\0\0\0"..., 512) = 512
+mmap(NULL, 163840, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf7f8c000
+mmap(0xf7f8c000, 152444, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xf7f8c000
+mmap(0xf7fb2000, 6260, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x25000) = 0xf7fb2000
+close(3)                                = 0
+munmap(0xc02000, 8192)                  = 0
+brk(NULL)                               = 0x816d000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap2(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf7f8a000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat64(3, {st_mode=S_IFREG|0644, st_size=51999, ...}) = 0
+mmap2(NULL, 51999, PROT_READ, MAP_PRIVATE, 3, 0) = 0xf7f7d000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\1\1\1\3\0\0\0\0\0\0\0\0\3\0\3\0\1\0\0\0\20\220\1\0004\0\0\0H\232\35\0\0\0\0\0004\0 \0\n\0(\0F\0E\0\6\0\0\0004\0\0\0004\0\0\0004\0\0\0@\1\0\0@\1\0\0\4\0\0\0\4\0\0\0\3\0\0\0Lx\30\0Lx\30\0Lx\30\0\23\0\0\0\23\0\0\0\4\0\0\0\4\0\0\0\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20D\35\0\20D\35\0\5\0\0\0\0\20\0\0\1\0\0\0\\Q\35\0\\a\35\0\\a\35\0\230-\0\0\300X\0\0\6\0\0\0\0\20\0\0\2\0\0\0lm\35\0l}\35\0l}\35\0\360\0\0\0\360\0\0\0\6\0\0\0\4\0\0\0\4\0\0\0t\1\0\0t\1\0\0t\1\0\0D\0\0\0D\0\0\0\4\0\0\0\4\0\0\0\7\0\0\0\\Q\35\0\\a\35\0\\a\35\0\10\0\0\0T\0\0\0\4\0\0\0\4\0\0\0P\345td`x\30\0`x\30\0`x\30\0\\e\0\0\\e\0\0\4\0\0\0\4\0\0\0Q\345td\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\20\0\0\0R\345td\\Q\35\0\\a\35\0\\a\35\0\244\36\0\0\244\36\0\0\4\0\0\0\1\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\16\30\216\305\360\234\30zz\222xMK\227\252%\33\25\251<\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\2\0\0\0\0\0\0\0\363\3\0\0\f\0\0\0\0\2\0\0\16\0\0\0\2400\20D\200 \2\1\214\3\346\220AE\210\0\204\0\10\0G\204Pp\300\200\1\f\212\f@\0010\0\10@2\10\252\0\210H6m"..., 512) = 512
+fstat64(3, {st_mode=S_IFREG|0755, st_size=1942840, ...}) = 0
+mmap2(NULL, 1948188, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0xf7da1000
+mprotect(0xf7f76000, 4096, PROT_NONE)   = 0
+mmap2(0xf7f77000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d5000) = 0xf7f77000
+mmap2(0xf7f7a000, 10780, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf7f7a000
+close(3)                                = 0
+set_thread_area({entry_number=-1, base_addr=0xf7f8b0c0, limit=0x0fffff, seg_32bit=1, contents=0, read_exec_only=0, limit_in_pages=1, seg_not_present=0, useable=1}) = 0 (entry_number=12)
+mprotect(0xf7f77000, 8192, PROT_READ)   = 0
+mprotect(0x804a000, 4096, PROT_READ)    = 0
+mprotect(0xf7fb2000, 4096, PROT_READ)   = 0
+munmap(0xf7f7d000, 51999)               = 0
+getuid32()                              = 0
+write(1, "Input : ", 8)                 = 8
+pipe([3, 4])                            = 0
+pipe([5, 6])                            = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xf7f8b128) = 238
+read(3, 0xffdda7f2, 9)                  = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=238, si_uid=0, si_status=0, si_utime=0, si_stime=0} ---
+read(3, 0xffdda7f2, 9)                  = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+--- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
++++ killed by SIGINT +++

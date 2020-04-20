@@ -1,0 +1,4 @@
+printf@got - 0x80497a4
+system - 0xf7e4c850
+puts@got - 0x80497ac
+return_to_main - 0x080484b8

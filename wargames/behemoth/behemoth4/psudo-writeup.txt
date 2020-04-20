@@ -1,0 +1,2 @@
+binary attemps to read off file located at /tmp/<PID> 
+use ps to estimate next PID, create link to next level's password named /tmp/<PREDICTED_PID>

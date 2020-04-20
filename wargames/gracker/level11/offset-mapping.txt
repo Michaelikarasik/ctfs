@@ -1,0 +1,4 @@
+base address - 0xf757a000
+/bin/sh offset - 0x15d1a9
+system offset - 0x0003e360
+exit offset -  0x00031150
